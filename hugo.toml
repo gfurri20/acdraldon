@@ -1,3 +1,8 @@
 baseURL = 'http://example.org/'
+defaultContentLanguage = 'it'
 languageCode = 'it'
 title = 'A.C.D. Raldon'
+
+[params]
+    instagram = 'https://instagram.com'
+    facebook = 'https://facebook.com'

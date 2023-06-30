@@ -1,0 +1,22 @@
+<footer class="bg-dark py-3 mt-5">
+    <div class="container text-light">
+        <div class="row align-items-center">
+            <div class="col-5 font-raldon">
+                &copy; A.C.D. Raldon
+            </div>
+            <div class="col text-center">
+                <img id="footer_logo" class="logo" src="{{ "/images/logo.png" | relURL }}">
+            </div>
+            <div class="col-5 text-end">
+                <ul class="nav col-md justify-content-end list-unstyled d-flex">
+                    <li class="ms-3"><a href="{{ .Site.Params.instagram }}" target="_blank">
+                        <img class="logo" src="{{ "/images/insta.png" | relURL }}" >
+                    </a></li>
+                    <li class="ms-3"><a href="{{ .Site.Params.facebook }}" target="_blank">
+                        <img class="logo" src="{{ "/images/faceb.png" | relURL }}" >
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>

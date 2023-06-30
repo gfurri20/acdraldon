@@ -1,6 +1,9 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand" href="#">A.C.D. Raldon</a>
+    <div class="container align-items-center">
+        <a class="navbar-brand font-raldon" href="{{ .Site.BaseURL | relLangURL }}">
+            <img class="logo" src="{{ "/images/logo.png" | relURL }}" >
+            A.C.D. Raldon
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -8,22 +11,22 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link">Home</a>
+                    <a class="nav-link text-light" href="{{ .Site.BaseURL }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">News</a>
+                    <a class="nav-link text-light" href="#">News</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Organigramma</a>
+                    <a class="nav-link text-light" href="#">Organigramma</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link">Prima Squadra</a>
+                    <a class="nav-link text-light" href="#">Prima Squadra</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link">Settore Giovanile</a>
+                    <a class="nav-link text-light" href="#">Settore Giovanile</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link">Contatti</a>
+                    <a class="nav-link text-light" href="#">Contatti</a>
                 </li>
             </ul>
         </div>
