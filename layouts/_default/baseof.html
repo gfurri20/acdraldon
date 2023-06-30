@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    {{ partial "header" . }}
+</head>
+<body>
+    <!-- Navbar -->
+    {{ partial "navbar" . }}
+
+    {{ block "main" . }}
+        <!-- Main Block -->
+    {{ end }}
+
+    <!-- Script per Bootstrap v.5.3.0 -->
+    {{ partial "bootstrap_script" . }}
+</body>
+</html>
