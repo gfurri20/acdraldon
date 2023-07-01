@@ -5,3 +5,10 @@
 .font-raldon {
     font-family: Garamond;
 }
+
+.diagonal-bg {
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+    background-image: -webkit-linear-gradient(130deg, #14b10c 40%, #fff 40%);
+}

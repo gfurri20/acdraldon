@@ -1,5 +1,24 @@
 {{ define "main" }}
     <div class="container">
         <h1>News</h1>
+
+        <div class="row row-cols-1 row-cols-md-5 g-4">
+
+            {{ range first 10 .Pages.ByDate }}
+                <div class="col">
+                    <div class="card h-100">
+                        <img src={{ .Params.Image }} class="card-img-top" alt="Logo">
+                        <div class="card-body">
+                            <h5 class="card-title font-raldon">{{ .Title }}</h5>
+                            <p class="card-text">{{ .Content | truncate 100 }}</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Pubblicata il {{ .Date | time.Format ":date_long" }}</small>
+                        </div>
+                    </div>
+                </div>
+            {{ end }}
+
+        </div>
     </div>
 {{ end }}
