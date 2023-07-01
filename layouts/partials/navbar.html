@@ -10,24 +10,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="{{ .Site.BaseURL }}">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#">News</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#">Organigramma</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#">Prima Squadra</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#">Settore Giovanile</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#">Contatti</a>
-                </li>
+                {{ range .Site.Menus.main }}
+                    <li class="nav-item px-2">
+                        <a class="nav-link text-light" href="{{ .PageRef }}">{{ .Name }}</a>
+                    </li>
+                {{ end }}
             </ul>
         </div>
     </div>

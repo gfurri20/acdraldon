@@ -2,7 +2,31 @@ baseURL = 'http://example.org/'
 defaultContentLanguage = 'it'
 languageCode = 'it'
 title = 'A.C.D. Raldon'
-
 [params]
     instagram = 'https://instagram.com'
     facebook = 'https://facebook.com'
+[menu]
+    [[menu.main]]
+        name = 'Home'
+        pageRef = '/'
+        weight = 1
+    [[menu.main]]
+        name = 'News'
+        pageRef = '/news'
+        weight = 2
+    [[menu.main]]
+        name = 'Organigramma'
+        pageRef = '/organigramma'
+        weight = 3
+    [[menu.main]]
+        name = 'Prima Squadra'
+        pageRef = '/prima-squadra'
+        weight = 4
+    [[menu.main]]
+        name = 'Settore Giovanile'
+        pageRef = '/settore-giovanile'
+        weight = 5
+    [[menu.main]]
+        name = 'Contatti'
+        pageRef = '/contatti'
+        weight = 6
